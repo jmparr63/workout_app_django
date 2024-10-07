@@ -1,0 +1,5 @@
+.venv
+
+.deprecated_projects
+
+workout_app/db.sqlite3

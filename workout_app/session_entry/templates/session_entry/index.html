@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>
+        {% if latest_session_list %}
+        <p>My latest gym sessions:</p>
+        <ul>
+        {% for session in latest_session_list %}
+            <li><a href="/session_entry/{{ session.id }}/">{{ session }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No sessions are available.</p>
+    {% endif %}
+    </p>
+  </body>
+</html>
+
