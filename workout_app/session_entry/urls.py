@@ -7,6 +7,8 @@ urlpatterns = [
     path("", views.index, name="index"),
     # ex: /session_entry/index
     path("index", views.index, name="index"),
+    # ex: /session_entry/capture
+    path("capture", views.capture, name="capture"),
     # ex: /session_entry/analyse
     path("analyse", views.analyse, name="analyse"),
     # ex: /session_entry/template
