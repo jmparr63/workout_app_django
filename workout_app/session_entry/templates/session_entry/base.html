@@ -1,0 +1,52 @@
+<!-- base.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}JP's Session Entry App{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+</head>
+
+    
+<nav id="menu">
+    <ul class="links">
+        <li><a href="index">Home</a></li>
+        <li><a href="capture">Capture</a></li>
+        <li><a href="analyse">Analyse</a></li>
+        <li><a href="template">Template</a></li>
+    </ul>
+</nav>
+
+<body>
+
+<!-- Header -->
+<header id="header" class="alt"><div class="logo"><a href="index">Workout Tracker <span>by JP</span></a></div>
+    <a href="#menu">Menu</a>
+</header>
+   
+
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+<footer id="footer"><div class="container">
+    <!--<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+    </ul>--></div>
+</footer>
+<div class="copyright">
+    Made with <a href="https://templated.co/">Templated</a>.
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script><script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script><script src="{% static 'assets/js/skel.min.js' %}"></script><script src="{% static 'assets/js/util.js' %}"></script><script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
