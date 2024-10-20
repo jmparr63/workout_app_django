@@ -9,6 +9,7 @@ urlpatterns = [
     path("index", views.index, name="index"),
     # ex: /session_entry/capture
     path("capture", views.capture, name="capture"),
+    path('cardio_form', views.get_cardio_form, name='get_cardio_form'),
     # ex: /session_entry/analyse
     path("analyse", views.analyse, name="analyse"),
     # ex: /session_entry/template

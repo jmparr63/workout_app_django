@@ -1,0 +1,16 @@
+{% load static %}
+
+{% block title %}<div class="form-separator"></div>{% endblock %}
+
+{% block content %}
+
+
+{% load crispy_forms_tags %}
+
+<div class="cardio-form">
+    <h3>Cardio Exercise {{ form.prefix }}</h3>
+    {% crispy form %}
+    <div class="form-separator"></div>
+</div>
+
+{% endblock %}
